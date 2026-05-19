@@ -1,0 +1,362 @@
+.cardsPokemons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 200px;
+    border: solid cyan 2px;
+    border-radius: 15px;
+}
+
+.imagemDosPokemons {
+    height: 100px;
+    width: 100px;
+}
+
+.nome {
+    font-size: 25px;
+    color: white;
+}
+
+.precoDoPokemon {
+    font-size: 20px;
+    color: white;
+}
+
+/* berries ====================================== */
+
+.cardsBerries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 200px;
+    border: solid cyan 2px;
+    border-radius: 15px;
+}
+
+.imagemDosBerries {
+    height: 100px;
+    width: 100px;
+}
+
+.nomeDosBerries {
+    font-size: 25px;
+    color: white;
+}
+
+.precoDaBerrie {
+    font-size: 20px;
+    color: white;
+}
+
+/* pokebolas ================================== */
+
+.cardsPokebolas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 200px;
+    border: solid cyan 2px;
+    border-radius: 15px;
+}
+
+.imagemDasPokebolas {
+    height: 100px;
+    width: 100px;
+}
+
+.nomeDasPokebolas {
+    font-size: 25px;
+    color: white;
+}
+
+.precoDaPokebola {
+    font-size: 20px;
+    color: white;
+}
+
+/* moves ======================================== */
+
+.cardsMoves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 200px;
+    border: solid cyan 2px;
+    border-radius: 15px;
+}
+
+.imagemDosMoves {
+    height: 100px;
+    width: 100px;
+}
+
+.nomeDosMoves {
+    font-size: 25px;
+    color: white;
+}
+
+.precoDoCDMove {
+    font-size: 20px;
+    color: white;
+}
+
+/* click pokemon ========================================== */
+
+#telaCinza {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    filter: grayscale(100%);
+    filter: opacity(30%);
+}
+
+#conteudoDoCard {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgb(219, 55, 96);
+}
+
+.imagemDoPokemonClicado {
+    height: 100px;
+    width: 100px;
+}
+
+.nomeDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.alturaDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.pesoDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.tiposDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+/*  */
+.generoDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.shinyDoPokemonClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+/*  */
+.escolherGeneroDoPokemon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20px;
+    width: 300px;
+}
+
+.genero {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 50px;
+    font-size: 20px;
+}
+
+.corShiny {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.corShiny {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.precoDoPokemonClick {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.divDoBotao {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+}
+
+.botaoParaComprarPokemon {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+/* click berries ========================================== */
+
+.tituloDaBerrieQueFoiClicada {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.precoDaBerrieClicada {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.divDoBotao {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+}
+
+.botaoParaComprarBerries {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+/* click pokebolas ========================================== */
+
+.tituloDaPokebolaQueFoiClicada {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.precoDaPokebolaClicada {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.divDoBotao {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+}
+
+.botaoParaComprarPokebola {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+/* click move CDS ========================================== */
+
+.tituloDoMoveCDSQueFoiClicada {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.precoDoMoveClicado {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.divDoBotao {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 30px;
+    width: 300px;
+}
+
+.botaoParaComprarMoves {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}

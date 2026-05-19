@@ -1,0 +1,196 @@
+#divDoCarrinho {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: calc(50% - 30%);
+    top: calc(50% - 45%);
+    height: 90%;
+    width: 60%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(219, 55, 96);
+}
+
+#removerProdutosDoCarrinhoNaDiv {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+    width: 100%;
+}
+
+#removerProdutoImgLixeira {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.removerProdutoIcone {
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+#divDosProdutosCompradosDiv {
+    display: flex;
+    justify-content: space-around;
+    height: calc(100% - 70px);
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(219, 55, 96);
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.cardsDosProdutosComprados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    width: 250px;
+    border: solid cyan 2px;
+    border-radius: 15px;
+}
+
+.imagemDosProdutosComprados {
+    height: 100px;
+    width: 100px;
+}
+
+.nomeDoPokemonComprado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.precoOriginalDoPokemonComprado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.precoDoPokemonComprado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.valorDoFrete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.valorDoShiny {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.generoDoPokemonComprado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.valorTotalDoCardComprado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+#finalizarComprasNoCarrinhoDivAparecerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 40px;
+    width: 100%;
+}
+
+#buttonFinalizarCompraDosProdutosAparecerDiv {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}
+
+/* finalizar compra */
+
+#divConfirmarCompra {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(50% - 15%);
+    left: calc(50% - 15%);
+    height: 30%;
+    width: 30%;
+    background-color: rgb(196, 21, 64);
+    border-radius: 10px;
+}
+
+#valoresDasComprasTotaisDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    width: 90%;
+}
+
+#divFinalizarOuCancelarCompra {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#buttonFinalizarCompra {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}
+
+#buttonCancelarCompra {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}

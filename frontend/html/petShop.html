@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="module" src="../js/sitePrincipal/mainSitePrincipal.js" defer></script>
+</head>
+
+<body>
+    <div id="telaCinza"></div>
+    <div id="conteudoDoCard"></div>
+    <div id="divDoCarrinho">
+        <div id="removerProdutosDoCarrinhoNaDiv">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54324.png" alt="" id="removerProdutoImgLixeira">
+        </div>
+        <div id="divDosProdutosCompradosDiv"></div>
+        <div id="finalizarComprasNoCarrinhoDivAparecerDiv">
+            <button id="buttonFinalizarCompraDosProdutosAparecerDiv">Finalizar compra</button>
+        </div>
+
+        <div id="divConfirmarCompra">
+            <div id="valoresDasComprasTotaisDiv"></div>
+            <div id="divFinalizarOuCancelarCompra">
+                <button id="buttonCancelarCompra">Cancelar compra</button>
+                <button id="buttonFinalizarCompra">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h2 id="nomeDaLoja">PokeShop</h2>
+        <div id="abasDaLoja">
+            <p class="nomeDasAbas" id="abaPokemons">Pokémons</p>
+            <p class="nomeDasAbas" id="abaBerries">Berries</p>
+            <p class="nomeDasAbas" id="abaPokebolas">Pokébolas</p>
+            <p class="nomeDasAbas" id="abaBadges">Badges</p>
+            <p class="nomeDasAbas" id="abaCDS">Move CDs (TM/HM)</p>
+        </div>
+        <div id="menuDoPerfil">
+            <p id="nomeDaConta"></p>
+            <img src="https://th.bing.com/th/id/R.4f5f21bf8bd275fbaf69e94040be9fd3?rik=Q5lw1rQAKZzqMw&pid=ImgRaw&r=0" alt="" id="iconeDeCarrinho">
+        </div>
+    </header>
+
+    <main>
+        <section class="sectionsDeVendas" id="sectionPokemons">
+            <div id="divPesquisaEFiltro">
+                <input type="text" id="pesquisaPokemonInput" class="pesquisa">
+                <select name="TiposDePokemons" id="selecionaFiltroDoTipoPokemonUm">
+                    <option value="">Nenhum filtro</option>
+                    <option value="steel">Aço</option>
+                    <option value="water">Água</option>
+                    <option value="dragon">Dragão</option>
+                    <option value="electric">Elétrico</option>
+                    <option value="fairy">Fada</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="fire">Fogo</option>
+                    <option value="ice">Gelo</option>
+                    <option value="bug">Inseto</option>
+                    <option value="fighting">Lutador</option>
+                    <option value="normal">Normal</option>
+                    <option value="rock">Pedra</option>
+                    <option value="grass">Planta</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="dark">Sombrio</option>
+                    <option value="ground">Terrestre</option>
+                    <option value="poison">Venenoso</option>
+                    <option value="flying">Voador</option>
+                </select>
+
+                <select name="TiposDePokemons" id="selecionaFiltroDoTipoPokemonDois">
+                    <option value="">Nenhum filtro</option>
+                    <option value="steel">Aço</option>
+                    <option value="water">Água</option>
+                    <option value="dragon">Dragão</option>
+                    <option value="electric">Elétrico</option>
+                    <option value="fairy">Fada</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="fire">Fogo</option>
+                    <option value="ice">Gelo</option>
+                    <option value="bug">Inseto</option>
+                    <option value="fighting">Lutador</option>
+                    <option value="normal">Normal</option>
+                    <option value="rock">Pedra</option>
+                    <option value="grass">Planta</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="dark">Sombrio</option>
+                    <option value="ground">Terrestre</option>
+                    <option value="poison">Venenoso</option>
+                    <option value="flying">Voador</option>
+                </select>
+                <button id="enviarTiposDePokemon">Enviar</button>
+            </div>
+            <div class="painelDeVendas" id="painelDeVendasPokemons"></div>
+        </section>
+        <section class="sectionsDeVendas" id="sectionBerries">
+            <input type="text" id="pesquisaBerriesInput" class="pesquisa">
+            <div class="painelDeVendas" id="painelDeVendasBerries"></div>
+        </section>
+        <section class="sectionsDeVendas" id="sectionPokébolas">
+            <input type="text" id="pesquisaPokebolasInput" class="pesquisa">
+            <div class="painelDeVendas" id="painelDeVendasPokebolas"></div>
+        </section>
+        <section class="sectionsDeVendas" id="sectionBadges">sectionBadges</section>
+        <section class="sectionsDeVendas" id="sectionMoveCDsTMHM">
+            <input type="text" id="pesquisaMovesCDSInput" class="pesquisa">
+            <div class="painelDeVendas" id="painelDeVendasMoves"></div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.sectionsDeVendas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(211, 10, 64);
+}
+
+#sectionPokemons {
+    display: flex;
+}
+
+#sectionBerries {
+    display: none;
+}
+
+#sectionPokébolas {
+    display: none;
+}
+
+#sectionBadges {
+    display: none;
+}
+
+#sectionMoveCDsTMHM {
+    display: none;
+}
+
+.painelDeVendas {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}

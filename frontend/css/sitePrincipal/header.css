@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(211, 10, 64);
+}
+
+#nomeDaLoja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+}
+
+#abasDaLoja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+}
+
+#menuDoPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(202, 29, 75);
+}
+
+#nomeDaConta {
+    font-size: 30px;
+    color: white;
+}
+
+#iconeDeCarrinho {
+    height: 30px;
+    width: 30px;
+}

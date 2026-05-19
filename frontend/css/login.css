@@ -1,0 +1,113 @@
+/* Classes usadas no "login" e "criar conta" */
+.inputLoginECriarConta {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* lista de classes e ids */
+
+#paginaLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#div-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 450px;
+    border-radius: 20px;
+    border: solid rgb(219, 55, 96);
+    background-color: rgb(211, 10, 64);
+}
+
+#hUmFazerLogin {
+    color: white;
+}
+
+#divParabotaoDeLogin {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+    width: 300px;
+}
+
+#botaoParaEntrarNoSite {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+#textoConvidandoACriarConta {
+    display: flex;
+    justify-content: space-between;
+    width: 195px;
+}
+
+#aparecerPaginaCriarConta {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* criar conta */
+
+#div-criarConta {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    width: 450px;
+    border-radius: 20px;
+    border: solid rgb(219, 55, 96);
+    background-color: rgb(211, 10, 64);
+}
+
+#hUmCriarConta {
+    color: white;
+}
+
+#textoConvidandoAFazerLogin {
+    display: flex;
+    justify-content: space-around;
+    width: 195px;
+}
+
+#selectEstadosInput {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#aparecerPaginaFazerLogin {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#divParabotaoDeCriarConta {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 30px;
+    width: 300px;
+}
+
+#botaoParaCriarConta {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}

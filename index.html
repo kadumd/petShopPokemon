@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./frontend/css/main.css">
+    <script type="module" src="./frontend/js/sistemaLogin/mainLogin.js" defer></script>
+</head>
+
+<body>
+    <section id="paginaLogin">
+        <div id="div-login">
+            <h1 id="hUmFazerLogin">Fazer login</h1>
+            <input type="text" placeholder="Nome:" class="inputLoginECriarConta" id="nomeLogin">
+            <input type="email" placeholder="Email:" class="inputLoginECriarConta" id="emailLogin">
+            <input type="text" placeholder="Senha:" class="inputLoginECriarConta" id="senhaLogin">
+
+            <div id="textoConvidandoACriarConta">Não tem uma conta? <p id="aparecerPaginaCriarConta">Crie uma</p></div>
+
+            <div id="divParabotaoDeLogin">
+                <button id="botaoParaEntrarNoSite">Entrar</button>
+            </div>
+        </div>
+
+        <div id="div-criarConta">
+            <h1 id="hUmCriarConta">Criar conta</h1>
+            <input type="text" placeholder="Nome:" class="inputLoginECriarConta" id="nomeCriarConta">
+            <input type="email" placeholder="Email:" class="inputLoginECriarConta" id="emailCriarConta">
+            <input type="text" placeholder="Senha:" class="inputLoginECriarConta" id="senhaCriarConta">
+            <select name="Estados" id="selectEstadosInput">
+                <option value="Outro">Outro</option>
+
+                <option value="Rio Branco - Acre (AC)">Rio Branco - Acre (AC)</option>
+                <option value="Cruzeiro do Sul - Acre (AC)">Cruzeiro do Sul - Acre (AC)</option>
+                <option value="Sena Madureira - Acre (AC)">Sena Madureira - Acre (AC)</option>
+
+                <option value="Macapá - Amapá (AP)">Macapá - Amapá (AP)</option>
+                <option value="Santana - Amapá (AP)">Santana - Amapá (AP)</option>
+                <option value="Laranjal do Jari - Amapá (AP)">Laranjal do Jari - Amapá (AP)</option>
+                
+                <option value="Manaus - Amazonas (AM)">Manaus - Amazonas (AM)</option>
+                <option value="Itacoatiara - Amazonas (AM)">Itacoatiara - Amazonas (AM)</option>
+                <option value="Manacapuru - Amazonas (AM)">Manacapuru - Amazonas (AM)</option>
+
+                <option value="Belém - Pará (PA)">Belém - Pará (PA)</option>
+                <option value="Ananindeua - Pará (PA)">Ananindeua - Pará (PA)</option>
+                <option value="Santarém - Pará (PA)">Santarém - Pará (PA)</option>
+
+                <option value="Porto Velho - Rondônia (RO)">Porto Velho - Rondônia (RO)</option>
+                <option value="Ji-Paraná - Rondônia (RO)">Ji-Paraná - Rondônia (RO)</option>
+                <option value="Ariquemes - Rondônia (RO)">Ariquemes - Rondônia (RO)</option>
+
+                <option value="Boa Vista - Roraima (RR)">Boa Vista - Roraima (RR)</option>
+                <option value="Rorainópolis - Roraima (RR)">Rorainópolis - Roraima (RR)</option>
+                <option value="Caracaraí - Roraima (RR)">Caracaraí - Roraima (RR)</option>
+
+                <option value="Palmas - Tocantins (TO)">Palmas - Tocantins (TO)</option>
+                <option value="Araguaína - Tocantins (TO)">Araguaína - Tocantins (TO)</option>
+                <option value="Gurupi - Tocantins (TO)">Gurupi - Tocantins (TO)</option>
+
+                <option value="Maceió - Alagoas (AL)">Maceió - Alagoas (AL)</option>
+                <option value="Arapiraca - Alagoas (AL)">Arapiraca - Alagoas (AL)</option>
+                <option value="Palmeira dos Índios - Alagoas (AL)">Palmeira dos Índios - Alagoas (AL)</option>
+
+                <option value="Salvador - Bahia (BA)">Salvador - Bahia (BA)</option>
+                <option value="Feira de Santana - Bahia (BA)">Feira de Santana - Bahia (BA)</option>
+                <option value="Vitória da Conquista - Bahia (BA)">Vitória da Conquista - Bahia (BA)</option>
+
+                <option value="Fortaleza - Ceará (CE)">Fortaleza - Ceará (CE)</option>
+                <option value="Juazeiro do Norte - Ceará (CE)">Juazeiro do Norte - Ceará (CE)</option>
+                <option value="Sobral - Ceará (CE)">Sobral - Ceará (CE)</option>
+                
+                <option value="São Luís - Maranhão (MA)">São Luís - Maranhão (MA)</option>
+                <option value="Imperatriz - Maranhão ">Imperatriz - Maranhão (MA)</option>
+                <option value="São José de Ribamar - Maranhão (MA)">São José de Ribamar - Maranhão (MA)</option>
+
+                <option value="João Pessoa - Paraíba (PB)">João Pessoa - Paraíba (PB)</option>
+                <option value="Campina Grande - Paraíba (PB)">Campina Grande - Paraíba (PB)</option>
+                <option value="Santa Rita - Paraíba (PB)">Santa Rita - Paraíba (PB)</option>
+
+                <option value="Recife - Pernambuco (PE)">Recife - Pernambuco (PE)</option>
+                <option value="Olinda - Pernambuco (PE)">Olinda - Pernambuco (PE)</option>
+                <option value="Caruaru - Pernambuco (PE)">Caruaru - Pernambuco (PE)</option>
+
+                <option value="Teresina - Piauí (PI)">Teresina - Piauí (PI)</option>
+                <option value="Parnaíba - Piauí (PI)">Parnaíba - Piauí (PI)</option>
+                <option value="Picos - Piauí (PI)">Picos - Piauí (PI)</option>
+
+                <option value="Natal - Rio Grande do Norte (RN)">Natal - Rio Grande do Norte (RN)</option>
+                <option value="Mossoró - Rio Grande do Norte (RN)">Mossoró - Rio Grande do Norte (RN)</option>
+                <option value="Parnamirim - Rio Grande do Norte (RN)">Parnamirim - Rio Grande do Norte (RN)</option>
+
+                <option value="Aracaju - Sergipe (SE)">Aracaju - Sergipe (SE)</option>
+                <option value="Nossa Senhora do Socorro - Sergipe (SE)">Nossa Senhora do Socorro - Sergipe (SE)</option>
+                <option value="São Cristóvão - Sergipe (SE)">São Cristóvão - Sergipe (SE)</option>
+
+                <option value="Ceilândia - Distrito Federal (DF)">Ceilândia - Distrito Federal (DF)</option>
+                <option value="Samambaia - Distrito Federal (DF)">Samambaia - Distrito Federal (DF)</option>
+                <option value="Plano Piloto - Distrito Federal (DF)">Plano Piloto - Distrito Federal (DF)</option>
+
+                <option value="Goiânia - Goiás (GO)">Goiânia - Goiás (GO)</option>
+                <option value="Aparecida de Goiânia - Goiás (GO)">Aparecida de Goiânia - Goiás (GO)</option>
+                <option value="Anápolis - Goiás (GO)">Anápolis - Goiás (GO)</option>
+
+                <option value="Cuiabá - Mato Grosso (MT)">Cuiabá - Mato Grosso (MT)</option>
+                <option value="Várzea Grande - Mato Grosso (MT)">Várzea Grande - Mato Grosso (MT)</option>
+                <option value="Rondonópolis - Mato Grosso (MT)">Rondonópolis - Mato Grosso (MT)</option>
+
+                <option value="Campo Grande - Mato Grosso do Sul (MS)">Campo Grande - Mato Grosso do Sul (MS)</option>
+                <option value="Dourados - Mato Grosso do Sul (MS)">Dourados - Mato Grosso do Sul (MS)</option>
+                <option value="Corumbá - Mato Grosso do Sul (MS)">Corumbá - Mato Grosso do Sul (MS)</option>
+
+                <option value="Vitória - Espírito Santo (ES)">Vitória - Espírito Santo (ES)</option>
+                <option value="Vila Velha - Espírito Santo (ES)">Vila Velha - Espírito Santo (ES)</option>
+                <option value="Serra - Espírito Santo (ES)">Serra - Espírito Santo (ES)</option>
+
+                <option value="Belo Horizonte - Minas Gerais (MG)">Belo Horizonte - Minas Gerais (MG)</option>
+                <option value="Uberlândia - Minas Gerais (MG)">Uberlândia - Minas Gerais (MG)</option>
+                <option value="Contagem - Minas Gerais (MG)">Contagem - Minas Gerais (MG)</option>
+
+                <option value="Rio de Janeiro - Rio de Janeiro (RJ)">Rio de Janeiro - Rio de Janeiro (RJ)</option>
+                <option value="São Gonçalo - Rio de Janeiro (RJ)">São Gonçalo - Rio de Janeiro (RJ)</option>
+                <option value="Duque de Caxias - Rio de Janeiro (RJ)">Duque de Caxias - Rio de Janeiro (RJ)</option>
+
+                <option value="São Paulo - São Paulo (SP)">São Paulo - São Paulo (SP)</option>
+                <option value="Guarulhos - São Paulo (SP)">Guarulhos - São Paulo (SP)</option>
+                <option value="Campinas - São Paulo (SP)">Campinas - São Paulo (SP)</option>
+
+                <option value="Curitiba - Paraná (PR)">Curitiba - Paraná (PR)</option>
+                <option value="Londrina - Paraná (PR)">Londrina - Paraná (PR)</option>
+                <option value="Maringá - Paraná (PR)">Maringá - Paraná (PR)</option>
+
+                <option value="Porto Alegre - Rio Grande do Sul (RS)">Porto Alegre - Rio Grande do Sul (RS)</option>
+                <option value="Caxias do Sul - Rio Grande do Sul (RS)">Caxias do Sul - Rio Grande do Sul (RS)</option>
+                <option value="Pelotas - Rio Grande do Sul (RS)">Pelotas - Rio Grande do Sul (RS)</option>
+
+                <option value="Joinville - Santa Catarina (SC)">Joinville - Santa Catarina (SC)</option>
+                <option value="Florianópolis - Santa Catarina (SC)">Florianópolis - Santa Catarina (SC)</option>
+                <option value="Blumenau - Santa Catarina (SC)">Blumenau - Santa Catarina (SC)</option>
+            </select>
+
+            <div id="textoConvidandoAFazerLogin">Já tem uma conta? <p id="aparecerPaginaFazerLogin">Faça login</p></div>
+
+            <div id="divParabotaoDeCriarConta">
+                <button id="botaoParaCriarConta">Criar conta</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
