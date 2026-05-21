@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express")
 const app = express()
 const fs = require("fs")
@@ -142,7 +143,7 @@ app.get("/frontend/js/sitePrincipal/sistemaContaECarrinho.js", (req, res) => {
 app.post("/login", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
-        const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+        const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const nomeLogin = informacaoRecebida.nomeLogin
         const emailLogin = informacaoRecebida.emailLogin
         const senhaLogin = informacaoRecebida.senhaLogin
@@ -170,7 +171,7 @@ app.post("/login", (req, res) => {
 app.post("/criarConta", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
-        const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+        const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const nomeCriarConta = informacaoRecebida.nomeCriarConta
         const emailCriarConta = informacaoRecebida.emailCriarConta
         const senhaCriarConta = informacaoRecebida.senhaCriarConta
@@ -191,7 +192,7 @@ app.post("/criarConta", (req, res) => {
 
         informacaoRecebida.carrinho = []
         listaDeContas.push(informacaoRecebida)
-        fs.writeFileSync('backend/json/contas.json', JSON.stringify(listaDeContas));
+        fs.writeFileSync(process.env.DB_MAIN_PATH, JSON.stringify(listaDeContas));
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ resposta: "Voltar ao fazer login" }));
         console.log(informacaoRecebida)
@@ -201,7 +202,7 @@ app.post("/criarConta", (req, res) => {
 app.post("/adicionarNoCarrinho", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
-        const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+        const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const listaDeFretes = JSON.parse(fs.readFileSync("./backend/json/frete.json"))
 
         // pega os dados do cliente logado
@@ -237,7 +238,7 @@ app.post("/adicionarNoCarrinho", (req, res) => {
 
         // adiciona no banco de dados e  responde o cliente
         verificacao.carrinho.push(informacaoRecebida)
-        fs.writeFileSync('backend/json/contas.json', JSON.stringify(listaDeContas));
+        fs.writeFileSync(process.env.DB_MAIN_PATH, JSON.stringify(listaDeContas));
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ resposta: "Voltar ao fazer login" }));
     })
@@ -246,7 +247,7 @@ app.post("/adicionarNoCarrinho", (req, res) => {
 app.post("/adicionarNoCarrinhoOutros", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
-        const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+        const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const listaDeFretes = JSON.parse(fs.readFileSync("./backend/json/frete.json"))
 
         // pega os dados do cliente logado
@@ -268,14 +269,14 @@ app.post("/adicionarNoCarrinhoOutros", (req, res) => {
 
         // adiciona no banco de dados e  responde o cliente
         verificacao.carrinho.push(informacaoRecebida)
-        fs.writeFileSync('backend/json/contas.json', JSON.stringify(listaDeContas));
+        fs.writeFileSync(process.env.DB_MAIN_PATH, JSON.stringify(listaDeContas));
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ resposta: "Voltar ao fazer login" }));
     })
 })
 
 app.get("/pedirProdutosDoCarrinho", (req, res) => {
-    const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+    const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
 
     // pega os dados do cliente logado
     let verificacao = listaDeContas.find(objeto => {
@@ -291,7 +292,7 @@ app.get("/pedirProdutosDoCarrinho", (req, res) => {
 app.post("/removerProdutoDoCarrinho", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
-        const listaDePlayers = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+        const listaDePlayers = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         
         let verificacao = listaDePlayers.find(objeto => {
             return objeto.nome === contaPropria 
@@ -302,7 +303,7 @@ app.post("/removerProdutoDoCarrinho", (req, res) => {
         if (verificacao) {
             const novoArray = verificacao.carrinho.filter(pessoa => pessoa.name !== informacaoRecebida.name);
             verificacao.carrinho = novoArray
-            fs.writeFileSync('backend/json/contas.json', JSON.stringify(listaDePlayers))
+            fs.writeFileSync(process.env.DB_MAIN_PATH, JSON.stringify(listaDePlayers))
 
             res.writeHead(200, { "Content-Type": "application/json" });
             res.end(JSON.stringify({ resposta: "Produto removido com sucesso" }));
@@ -331,7 +332,7 @@ app.get("/pedirOPrecoDeTodosOsProdutos", (req, res) => {
 })
 
 app.get("/finalizarCompras", (req, res) => {
-    const listaDeContas = JSON.parse(fs.readFileSync("./backend/json/contas.json"))
+    const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
 
     let verificacao = listaDeContas.find(objeto => {
         return objeto.nome === contaPropria
@@ -339,7 +340,7 @@ app.get("/finalizarCompras", (req, res) => {
 
     verificacao.carrinho = []
 
-    fs.writeFileSync('backend/json/contas.json', JSON.stringify(listaDeContas));
+    fs.writeFileSync(process.env.DB_MAIN_PATH, JSON.stringify(listaDeContas));
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(JSON.stringify({ resposta: 'Apagado' }));
 })
@@ -355,6 +356,6 @@ app.get("/pedirNome", (req, res) => {
     res.end(JSON.stringify({ resposta: contaPropria }));
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("Servidor funcionando")
 })

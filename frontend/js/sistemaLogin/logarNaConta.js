@@ -3,22 +3,70 @@ export default class LogarNaConta {
         this.adicionarEventosDeClick()
     }
 
+    nomeLoginInput = document.querySelector('#nomeLogin')
+    emailLoginInput = document.querySelector('#emailLogin')
+    senhaLoginInput = document.querySelector('#senhaLogin')
+
+    nomeCriarContaInput = document.querySelector('#nomeCriarConta')
+    emailCriarContaInput = document.querySelector('#emailCriarConta')
+    senhaCriarContaInput = document.querySelector('#senhaCriarConta')
+    selectEstadosInput = document.querySelector('#selectEstadosInput')
+
     botaoParaEntrarNoSite = document.querySelector('#botaoParaEntrarNoSite')
     botaoParaCriarConta = document.querySelector('#botaoParaCriarConta')
 
     adicionarEventosDeClick = () => {
+        this.nomeLoginInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.entrarNoSite()
+            }
+        })
+        this.emailLoginInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.entrarNoSite()
+            }
+        })
+        this.senhaLoginInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.entrarNoSite()
+            }
+        })
         this.botaoParaEntrarNoSite.addEventListener('click', this.entrarNoSite)
+
         this.botaoParaCriarConta.addEventListener('click', this.criarContaParaEntrarNoSite)
+        this.nomeCriarContaInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.criarContaParaEntrarNoSite()
+            }
+        })
+        this.emailCriarContaInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.criarContaParaEntrarNoSite()
+            }
+        })
+        this.senhaCriarContaInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.criarContaParaEntrarNoSite()
+            }
+        })
+        this.selectEstadosInput.addEventListener('keydown', (e) => {
+            let tecla = e.key
+            if (tecla === 'Enter') {
+                this.criarContaParaEntrarNoSite()
+            }
+        })
     }
 
     entrarNoSite = () => {
-        const nomeLoginInput = document.querySelector('#nomeLogin')
-        const emailLoginInput = document.querySelector('#emailLogin')
-        const senhaLoginInput = document.querySelector('#senhaLogin')
-
-        let nomeLogin = nomeLoginInput.value
-        let emailLogin = emailLoginInput.value
-        let senhaLogin = senhaLoginInput.value
+        let nomeLogin = this.nomeLoginInput.value
+        let emailLogin = this.emailLoginInput.value
+        let senhaLogin = this.senhaLoginInput.value
 
         fetch('/login', {
             method: "POST",
@@ -37,15 +85,10 @@ export default class LogarNaConta {
     }
 
     criarContaParaEntrarNoSite = () => {
-        const nomeCriarContaInput = document.querySelector('#nomeCriarConta')
-        const emailCriarContaInput = document.querySelector('#emailCriarConta')
-        const senhaCriarContaInput = document.querySelector('#senhaCriarConta')
-        const selectEstadosInput = document.querySelector('#selectEstadosInput')
-
-        let nome = nomeCriarContaInput.value
-        let email = emailCriarContaInput.value
-        let senha = senhaCriarContaInput.value
-        let localizacao = selectEstadosInput.value
+        let nome = this.nomeCriarContaInput.value
+        let email = this.emailCriarContaInput.value
+        let senha = this.senhaCriarContaInput.value
+        let localizacao = this.selectEstadosInput.value
 
         fetch('/criarConta', {
             method: "POST",

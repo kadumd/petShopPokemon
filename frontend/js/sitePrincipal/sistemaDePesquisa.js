@@ -16,15 +16,28 @@ export default class SistemaDePesquisa {
     painelDeVendasPokebolas = document.querySelector('#painelDeVendasPokebolas')
     painelDeVendasMoves = document.querySelector('#painelDeVendasMoves')
 
+    buttonFinalizarPesquisaPokemon = document.querySelector('#buttonFinalizarPesquisaPokemon')
+    buttonFinalizarPesquisaBerries = document.querySelector('#buttonFinalizarPesquisaBerries')
+    buttonFinalizarPesquisaPokebolas = document.querySelector('#buttonFinalizarPesquisaPokebolas')
+    buttonFinalizarPesquisaMoves = document.querySelector('#buttonFinalizarPesquisaMoves')
+
     detectarClickEEnter = () => {
         this.pesquisasPorPokemons.addEventListener('keydown', this.pesquisaDaAbaPokemon)
+        this.buttonFinalizarPesquisaPokemon.addEventListener('click', this.pesquisaDaAbaPokemon)
+
         this.pesquisasPorBerries.addEventListener('keydown', this.pesquisaDaAbaBerries)
+        this.buttonFinalizarPesquisaBerries.addEventListener('click', this.pesquisaDaAbaBerries)
+
         this.pesquisasPorPokebolas.addEventListener('keydown', this.pesquisaDaAbaPokebola)
+        this.buttonFinalizarPesquisaPokebolas.addEventListener('click', this.pesquisaDaAbaPokebola)
+
         this.pesquisasPorMovesCDS.addEventListener('keydown', this.pesquisaDaAbaMoves)
+        this.buttonFinalizarPesquisaMoves.addEventListener('click', this.pesquisaDaAbaMoves)
     }
 
     pesquisaDaAbaPokemon = async (e) => {
-        if (e.key === 'Enter') {
+        console.log(e)
+        if (e.key === 'Enter' || e.target.id === 'buttonFinalizarPesquisaPokemon') {
             const pesquisasPorPokemonsValor = this.pesquisasPorPokemons.value
             if (!pesquisasPorPokemonsValor) {
                 this.petShopPokemon.fazerPedidoParaPokeApi()
@@ -67,7 +80,7 @@ export default class SistemaDePesquisa {
     }
 
     pesquisaDaAbaBerries = async (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' || e.target.id === 'buttonFinalizarPesquisaBerries') {
             const pesquisasPorBerriesValor = this.pesquisasPorBerries.value
             if (!pesquisasPorBerriesValor) {
                 this.petShopBerries.fazerPedidoParaPokeApi()
@@ -105,7 +118,7 @@ export default class SistemaDePesquisa {
     }
 
     pesquisaDaAbaPokebola = async (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' || e.target.id === 'buttonFinalizarPesquisaPokebolas') {
             const pesquisasPorPokebolasValor = this.pesquisasPorPokebolas.value
             if (!pesquisasPorPokebolasValor) {
                 this.petShopPokebolas.fazerPedidoParaPokeApi()
@@ -139,7 +152,7 @@ export default class SistemaDePesquisa {
     }
 
     pesquisaDaAbaMoves = async (e) => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' || e.target.id === 'buttonFinalizarPesquisaMoves') {
             const pesquisasPorMovesCDSValor = this.pesquisasPorMovesCDS.value
             if (!pesquisasPorMovesCDSValor) {
                 this.petShopCDS.fazerPedidoParaPokeApi()

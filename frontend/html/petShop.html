@@ -41,14 +41,16 @@
         </div>
         <div id="menuDoPerfil">
             <p id="nomeDaConta"></p>
-            <img src="https://th.bing.com/th/id/R.4f5f21bf8bd275fbaf69e94040be9fd3?rik=Q5lw1rQAKZzqMw&pid=ImgRaw&r=0" alt="" id="iconeDeCarrinho">
+            <img src="https://th.bing.com/th/id/R.4f5f21bf8bd275fbaf69e94040be9fd3?rik=Q5lw1rQAKZzqMw&pid=ImgRaw&r=0"
+                alt="" id="iconeDeCarrinho">
         </div>
     </header>
 
     <main>
         <section class="sectionsDeVendas" id="sectionPokemons">
-            <div id="divPesquisaEFiltro">
+            <div class="divPesquisaEFiltro">
                 <input type="text" id="pesquisaPokemonInput" class="pesquisa">
+                <button id="buttonFinalizarPesquisaPokemon">Pesquisar</button><!-- -->
                 <select name="TiposDePokemons" id="selecionaFiltroDoTipoPokemonUm">
                     <option value="">Nenhum filtro</option>
                     <option value="steel">Aço</option>
@@ -97,16 +99,25 @@
             <div class="painelDeVendas" id="painelDeVendasPokemons"></div>
         </section>
         <section class="sectionsDeVendas" id="sectionBerries">
-            <input type="text" id="pesquisaBerriesInput" class="pesquisa">
+            <div class="divPesquisaEFiltro">
+                <input type="text" id="pesquisaBerriesInput" class="pesquisa">
+                <button id="buttonFinalizarPesquisaBerries">Pesquisar</button><!-- -->
+            </div>
             <div class="painelDeVendas" id="painelDeVendasBerries"></div>
         </section>
         <section class="sectionsDeVendas" id="sectionPokébolas">
-            <input type="text" id="pesquisaPokebolasInput" class="pesquisa">
+            <div class="divPesquisaEFiltro">
+                <input type="text" id="pesquisaPokebolasInput" class="pesquisa">
+                <button id="buttonFinalizarPesquisaPokebolas">Pesquisar</button>
+            </div>
             <div class="painelDeVendas" id="painelDeVendasPokebolas"></div>
         </section>
         <section class="sectionsDeVendas" id="sectionBadges">sectionBadges</section>
         <section class="sectionsDeVendas" id="sectionMoveCDsTMHM">
-            <input type="text" id="pesquisaMovesCDSInput" class="pesquisa">
+            <div class="divPesquisaEFiltro">
+                <input type="text" id="pesquisaMovesCDSInput" class="pesquisa">
+                <button id="buttonFinalizarPesquisaMoves">Pesquisar</button>
+            </div>
             <div class="painelDeVendas" id="painelDeVendasMoves"></div>
         </section>
     </main>
