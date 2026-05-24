@@ -88,6 +88,16 @@ app.get("/frontend/js/sistemaLogin/logarNaConta.js", (req, res) => {
     res.end(fs.readFileSync('./frontend/js/sistemaLogin/logarNaConta.js'));
 })
 
+app.get("/frontend/js/sistemaLogin/localizacao.js", (req, res) => {
+    res.writeHead(200, { "Content-Type": "text/javascript" });
+    res.end(fs.readFileSync('./frontend/js/sistemaLogin/localizacao.js'));
+})
+
+app.get("/frontend/json/sistemaLogin/localizacaoRuas.json", (req, res) => {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(fs.readFileSync('./frontend/json/localizacaoRuas.json'));
+})
+
 // site principal
 
 app.get("/frontend/js/sitePrincipal/trocaDeAbas.js", (req, res) => {
@@ -172,15 +182,23 @@ app.post("/criarConta", (req, res) => {
     req.on("data", (body) => {
         const informacaoRecebida = JSON.parse(body)
         const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
-        const nomeCriarConta = informacaoRecebida.nomeCriarConta
-        const emailCriarConta = informacaoRecebida.emailCriarConta
-        const senhaCriarConta = informacaoRecebida.senhaCriarConta
+        const nomeCriarConta = informacaoRecebida.nome
+        const emailCriarConta = informacaoRecebida.email
+        const senhaCriarConta = informacaoRecebida.senha
+        const localizacaoCriarConta = informacaoRecebida.localizacao
         console.log(nomeCriarConta, emailCriarConta, senhaCriarConta)
         if (nomeCriarConta === '' || senhaCriarConta === '' || emailCriarConta === '') {
             res.writeHead(200, { "Content-Type": "application/json" });
-            res.end(JSON.stringify({ res: "lacuna vazia" }));
+            res.end(JSON.stringify({ resposta: "lacuna vazia" }));
             return
         }
+
+        if (localizacaoCriarConta === 'selecioneASuaLocalizacao') {
+            res.writeHead(200, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ resposta: "selecione sua localizacao" }));
+            return
+        }
+
         let verificacao = listaDeContas.find(objeto => {
             return objeto.nome === nomeCriarConta && objeto.email === emailCriarConta
         })
@@ -201,6 +219,13 @@ app.post("/criarConta", (req, res) => {
 
 app.post("/adicionarNoCarrinho", (req, res) => {
     req.on("data", (body) => {
+        const logge = logados[req.socket.remoteAddress]
+
+        if (!logge) {
+            res.writeHead(400)
+            return;
+        }
+
         const informacaoRecebida = JSON.parse(body)
         const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const listaDeFretes = JSON.parse(fs.readFileSync("./backend/json/frete.json"))
@@ -246,6 +271,13 @@ app.post("/adicionarNoCarrinho", (req, res) => {
 
 app.post("/adicionarNoCarrinhoOutros", (req, res) => {
     req.on("data", (body) => {
+        const logge = logados[req.socket.remoteAddress]
+
+        if (!logge) {
+            res.writeHead(400)
+            return;
+        }
+
         const informacaoRecebida = JSON.parse(body)
         const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
         const listaDeFretes = JSON.parse(fs.readFileSync("./backend/json/frete.json"))
@@ -276,6 +308,13 @@ app.post("/adicionarNoCarrinhoOutros", (req, res) => {
 })
 
 app.get("/pedirProdutosDoCarrinho", (req, res) => {
+    const logge = logados[req.socket.remoteAddress]
+
+    if (!logge) {
+        res.writeHead(400)
+        return;
+    }
+
     const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
 
     // pega os dados do cliente logado
@@ -291,11 +330,18 @@ app.get("/pedirProdutosDoCarrinho", (req, res) => {
 
 app.post("/removerProdutoDoCarrinho", (req, res) => {
     req.on("data", (body) => {
+        const logge = logados[req.socket.remoteAddress]
+
+        if (!logge) {
+            res.writeHead(400)
+            return;
+        }
+
         const informacaoRecebida = JSON.parse(body)
         const listaDePlayers = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
-        
+
         let verificacao = listaDePlayers.find(objeto => {
-            return objeto.nome === contaPropria 
+            return objeto.nome === contaPropria
         })
 
         console.log(verificacao)
@@ -315,6 +361,13 @@ app.post("/removerProdutoDoCarrinho", (req, res) => {
 })
 
 app.get("/pedirOPrecoDeTodosOsProdutos", (req, res) => {
+    const logge = logados[req.socket.remoteAddress]
+
+    if (!logge) {
+        res.writeHead(400)
+        return;
+    }
+
     let subTotalDoCarrinho = ''
     let totalDoCarrinho = ''
 
@@ -332,6 +385,13 @@ app.get("/pedirOPrecoDeTodosOsProdutos", (req, res) => {
 })
 
 app.get("/finalizarCompras", (req, res) => {
+    const logge = logados[req.socket.remoteAddress]
+
+    if (!logge) {
+        res.writeHead(400)
+        return;
+    }
+
     const listaDeContas = JSON.parse(fs.readFileSync(`./${process.env.DB_MAIN_PATH}`))
 
     let verificacao = listaDeContas.find(objeto => {

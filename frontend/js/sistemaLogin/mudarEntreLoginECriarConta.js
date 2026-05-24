@@ -3,6 +3,8 @@ export default class MudarEntreLoginECriarConta {
         this.adicionarEventoClick()
     }
 
+    selectRuasInput = document.querySelector('#selectRuasInput')
+
     aparecerPaginaCriarConta = document.querySelector('#aparecerPaginaCriarConta')
     aparecerPaginaFazerLogin = document.querySelector('#aparecerPaginaFazerLogin')
     divLogin = document.querySelector('#div-login')
@@ -17,6 +19,8 @@ export default class MudarEntreLoginECriarConta {
         console.log('oi')
         this.divLogin.style.display = 'none'
         this.divCriarConta.style.display = 'flex'
+        this.selectRuasInput.style.display = 'none'
+        this.selectRuasInput.innerHTML = ''
     }
 
     fazerLogin = () => {

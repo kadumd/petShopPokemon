@@ -1,0 +1,407 @@
+{
+  "São Luís - Maranhão (MA)": [
+    "Avenida Beira Mar",
+    "Avenida dos Holandeses",
+    "Avenida Jerônimo de Albuquerque"
+  ],
+  "Imperatriz - Maranhão (MA)": [
+    "Avenida Dorgival Pinheiro de Sousa",
+    "Avenida Getúlio Vargas",
+    "Rua Simplício Moreira"
+  ],
+  "São José de Ribamar - Maranhão (MA)": [
+    "Avenida Gonçalves Dias",
+    "Estrada de Ribamar",
+    "Avenida Clodomir Cardoso"
+  ],
+  "João Pessoa - Paraíba (PB)": [
+    "Avenida Epitácio Pessoa",
+    "Avenida Beira Rio",
+    "Avenida Ruy Carneiro"
+  ],
+  "Campina Grande - Paraíba (PB)": [
+    "Avenida Floriano Peixoto",
+    "Avenida Brasília",
+    "Rua Maciel Pinheiro"
+  ],
+  "Santa Rita - Paraíba (PB)": [
+    "BR-230",
+    "Avenida Flávio Ribeiro Coutinho",
+    "Rua Juarez Távora"
+  ],
+  "Recife - Pernambuco (PE)": [
+    "Avenida Boa Viagem",
+    "Avenida Agamenon Magalhães",
+    "Rua da Aurora"
+  ],
+  "Olinda - Pernambuco (PE)": [
+    "Avenida Getúlio Vargas",
+    "Avenida Presidente Kennedy",
+    "Rua do Amparo"
+  ],
+  "Caruaru - Pernambuco (PE)": [
+    "Avenida Agamenon Magalhães",
+    "Avenida Rui Barbosa",
+    "Rua 15 de Novembro"
+  ],
+  "Teresina - Piauí (PI)": [
+    "Avenida Frei Serafim",
+    "Avenida Raul Lopes",
+    "Avenida João XXIII"
+  ],
+  "Parnaíba - Piauí (PI)": [
+    "Avenida São Sebastião",
+    "Avenida Chagas Rodrigues",
+    "Rua Caramuru"
+  ],
+  "Picos - Piauí (PI)": [
+    "Avenida Getúlio Vargas",
+    "Rua Coelho Rodrigues",
+    "Avenida Senador Helvídio Nunes"
+  ],
+  "Natal - Rio Grande do Norte (RN)": [
+    "Avenida Roberto Freire",
+    "Avenida Salgado Filho",
+    "Via Costeira"
+  ],
+  "Mossoró - Rio Grande do Norte (RN)": [
+    "Avenida Presidente Dutra",
+    "Avenida Rio Branco",
+    "Rua Coronel Gurgel"
+  ],
+  "Parnamirim - Rio Grande do Norte (RN)": [
+    "Avenida Maria Lacerda Montenegro",
+    "BR-101",
+    "Avenida Castor Vieira Régis"
+  ],
+  "Aracaju - Sergipe (SE)": [
+    "Avenida Beira Mar",
+    "Avenida Hermes Fontes",
+    "Avenida Tancredo Neves"
+  ],
+  "Nossa Senhora do Socorro - Sergipe (SE)": [
+    "Avenida Principal",
+    "Rua A",
+    "Avenida Coletora"
+  ],
+  "São Cristóvão - Sergipe (SE)": [
+    "Rua Messias Prado",
+    "Avenida João Bebe Água",
+    "Rua Tobias Barreto"
+  ],
+  "Ceilândia - Distrito Federal (DF)": [
+    "Avenida Hélio Prates",
+    "Via NM",
+    "Via ML"
+  ],
+  "Samambaia - Distrito Federal (DF)": [
+    "Avenida Samambaia",
+    "QS 118",
+    "QN 212"
+  ],
+  "Plano Piloto - Distrito Federal (DF)": [
+    "Eixo Monumental",
+    "W3 Sul",
+    "L2 Norte"
+  ],
+  "Goiânia - Goiás (GO)": [
+    "Avenida Goiás",
+    "Avenida Anhanguera",
+    "Avenida T-63"
+  ],
+  "Aparecida de Goiânia - Goiás (GO)": [
+    "Avenida Independência",
+    "Avenida Rio Verde",
+    "Avenida São Paulo"
+  ],
+  "Anápolis - Goiás (GO)": [
+    "Avenida Brasil",
+    "Avenida Universitária",
+    "Rua Engenheiro Portela"
+  ],
+  "Cuiabá - Mato Grosso (MT)": [
+    "Avenida do CPA",
+    "Avenida Fernando Corrêa da Costa",
+    "Avenida Historiador Rubens de Mendonça"
+  ],
+  "Várzea Grande - Mato Grosso (MT)": [
+    "Avenida da FEB",
+    "Avenida Couto Magalhães",
+    "Avenida Filinto Müller"
+  ],
+  "Rondonópolis - Mato Grosso (MT)": [
+    "Avenida Lions Internacional",
+    "Avenida Júlio Campos",
+    "Rua Fernando Corrêa"
+  ],
+  "Campo Grande - Mato Grosso do Sul (MS)": [
+    "Avenida Afonso Pena",
+    "Avenida Mato Grosso",
+    "Rua 14 de Julho"
+  ],
+  "Dourados - Mato Grosso do Sul (MS)": [
+    "Avenida Marcelino Pires",
+    "Rua Hayel Bon Faker",
+    "Avenida Weimar Gonçalves Torres"
+  ],
+  "Corumbá - Mato Grosso do Sul (MS)": [
+    "Rua Frei Mariano",
+    "Avenida General Rondon",
+    "Rua Delamare"
+  ],
+  "Vitória - Espírito Santo (ES)": [
+    "Avenida Nossa Senhora da Penha",
+    "Avenida Beira Mar",
+    "Reta da Penha"
+  ],
+  "Vila Velha - Espírito Santo (ES)": [
+    "Avenida Champagnat",
+    "Avenida Carlos Lindenberg",
+    "Rodovia do Sol"
+  ],
+  "Serra - Espírito Santo (ES)": [
+    "Avenida Norte Sul",
+    "BR-101",
+    "Avenida Central"
+  ],
+  "Belo Horizonte - Minas Gerais (MG)": [
+    "Avenida Afonso Pena",
+    "Avenida Amazonas",
+    "Avenida do Contorno"
+  ],
+  "Uberlândia - Minas Gerais (MG)": [
+    "Avenida Rondon Pacheco",
+    "Avenida João Naves de Ávila",
+    "Avenida Getúlio Vargas"
+  ],
+  "Contagem - Minas Gerais (MG)": [
+    "Avenida João César de Oliveira",
+    "Via Expressa",
+    "Avenida Cardeal Eugênio Pacelli"
+  ],
+  "Rio de Janeiro - Rio de Janeiro (RJ)": [
+    "Avenida Brasil",
+    "Avenida Atlântica",
+    "Avenida Presidente Vargas"
+  ],
+  "São Gonçalo - Rio de Janeiro (RJ)": [
+    "Avenida Presidente Kennedy",
+    "Rua Doutor Feliciano Sodré",
+    "Avenida Maricá"
+  ],
+  "Duque de Caxias - Rio de Janeiro (RJ)": [
+    "Avenida Brigadeiro Lima e Silva",
+    "Rodovia Washington Luiz",
+    "Rua José de Alvarenga"
+  ],
+  "São Paulo - São Paulo (SP)": [
+    "Avenida Paulista",
+    "Marginal Tietê",
+    "Avenida Faria Lima"
+  ],
+  "Guarulhos - São Paulo (SP)": [
+    "Avenida Tiradentes",
+    "Avenida Paulo Faccini",
+    "Rodovia Presidente Dutra"
+  ],
+  "Campinas - São Paulo (SP)": [
+    "Avenida Norte Sul",
+    "Avenida Francisco Glicério",
+    "Avenida John Boyd Dunlop"
+  ],
+  "Curitiba - Paraná (PR)": [
+    "Rua XV de Novembro",
+    "Avenida Sete de Setembro",
+    "Avenida Batel"
+  ],
+  "Londrina - Paraná (PR)": [
+    "Avenida Higienópolis",
+    "Avenida Juscelino Kubitschek",
+    "Rua Sergipe"
+  ],
+  "Maringá - Paraná (PR)": [
+    "Avenida Brasil",
+    "Avenida Colombo",
+    "Avenida Tiradentes"
+  ],
+  "Porto Alegre - Rio Grande do Sul (RS)": [
+    "Avenida Ipiranga",
+    "Avenida Borges de Medeiros",
+    "Rua dos Andradas"
+  ],
+  "Caxias do Sul - Rio Grande do Sul (RS)": [
+    "Avenida Júlio de Castilhos",
+    "Rua Sinimbu",
+    "Avenida São Leopoldo"
+  ],
+  "Pelotas - Rio Grande do Sul (RS)": [
+    "Avenida Bento Gonçalves",
+    "Rua Quinze de Novembro",
+    "Avenida Ferreira Viana"
+  ],
+  "Joinville - Santa Catarina (SC)": [
+    "Rua Blumenau",
+    "Avenida Beira Rio",
+    "Rua Doutor João Colin"
+  ],
+  "Florianópolis - Santa Catarina (SC)": [
+    "Avenida Beira Mar Norte",
+    "Avenida Mauro Ramos",
+    "Rua Bocaiúva"
+  ],
+  "Blumenau - Santa Catarina (SC)": [
+    "Rua XV de Novembro",
+    "Rua Sete de Setembro",
+    "Avenida Beira Rio"
+  ],
+  "Rio Branco - Acre (AC)": [
+    "Avenida Ceará",
+    "Via Verde",
+    "Avenida Getúlio Vargas"
+  ],
+  "Cruzeiro do Sul - Acre (AC)": [
+    "Avenida Coronel Mâncio Lima",
+    "Avenida Copacabana",
+    "Rua Rui Barbosa"
+  ],
+  "Sena Madureira - Acre (AC)": [
+    "Avenida Avelino Chaves",
+    "Rua Padre Egídio",
+    "Rua Maranhão"
+  ],
+  "Macapá - Amapá (AP)": [
+    "Avenida FAB",
+    "Avenida Padre Júlio Maria Lombaerd",
+    "Rua Cândido Mendes"
+  ],
+  "Santana - Amapá (AP)": [
+    "Avenida Santana",
+    "Rua Ubaldo Figueira",
+    "Avenida Castelo Branco"
+  ],
+  "Laranjal do Jari - Amapá (AP)": [
+    "Avenida Tancredo Neves",
+    "Rua Rio Branco",
+    "Avenida JK"
+  ],
+  "Manaus - Amazonas (AM)": [
+    "Avenida Djalma Batista",
+    "Avenida Constantino Nery",
+    "Avenida Eduardo Ribeiro"
+  ],
+  "Itacoatiara - Amazonas (AM)": [
+    "Avenida Parque",
+    "Rua Borba",
+    "Rua Benjamin Constant"
+  ],
+  "Manacapuru - Amazonas (AM)": [
+    "Boulevard Pedro Rates",
+    "Avenida Ribeiro Júnior",
+    "Rua Quintino Bocaiúva"
+  ],
+  "Belém - Pará (PA)": [
+    "Avenida Nazaré",
+    "Avenida Presidente Vargas",
+    "Avenida Almirante Barroso"
+  ],
+  "Ananindeua - Pará (PA)": [
+    "BR-316",
+    "Avenida Mário Covas",
+    "Avenida Independência"
+  ],
+  "Santarém - Pará (PA)": [
+    "Avenida Tapajós",
+    "Avenida Mendonça Furtado",
+    "Avenida Rui Barbosa"
+  ],
+  "Porto Velho - Rondônia (RO)": [
+    "Avenida Jorge Teixeira",
+    "Avenida Sete de Setembro",
+    "Avenida Carlos Gomes"
+  ],
+  "Ji-Paraná - Rondônia (RO)": [
+    "Avenida Marechal Rondon",
+    "Avenida Brasil",
+    "Rua Seis de Maio"
+  ],
+  "Ariquemes - Rondônia (RO)": [
+    "Avenida Tancredo Neves",
+    "Avenida Capitão Sílvio",
+    "Avenida Jamari"
+  ],
+  "Boa Vista - Roraima (RR)": [
+    "Avenida Ville Roy",
+    "Avenida Glaycon de Paiva",
+    "Avenida Jaime Brasil"
+  ],
+  "Rorainópolis - Roraima (RR)": [
+    "Avenida Dra. Yandara",
+    "Rua Airton Senna",
+    "Avenida Brasil"
+  ],
+  "Caracaraí - Roraima (RR)": [
+    "Avenida Doutor Zany",
+    "Rua Rui Barbosa",
+    "Avenida Senador Hélio Campos"
+  ],
+  "Palmas - Tocantins (TO)": [
+    "Avenida JK",
+    "Avenida Teotônio Segurado",
+    "Avenida LO-01"
+  ],
+  "Araguaína - Tocantins (TO)": [
+    "Avenida Cônego João Lima",
+    "Avenida Filadélfia",
+    "Avenida Tocantins"
+  ],
+  "Gurupi - Tocantins (TO)": [
+    "Avenida Goiás",
+    "Avenida Maranhão",
+    "Avenida Pará"
+  ],
+  "Maceió - Alagoas (AL)": [
+    "Avenida Fernandes Lima",
+    "Avenida Álvaro Otacílio",
+    "Avenida Durval de Góes Monteiro"
+  ],
+  "Arapiraca - Alagoas (AL)": [
+    "Avenida Deputada Ceci Cunha",
+    "Rua Estudante José de Oliveira Leite",
+    "Avenida Governador Lamenha Filho"
+  ],
+  "Palmeira dos Índios - Alagoas (AL)": [
+    "Avenida Vieira de Brito",
+    "Rua Marechal Deodoro",
+    "Avenida Bráulio Montenegro"
+  ],
+  "Salvador - Bahia (BA)": [
+    "Avenida Paralela",
+    "Avenida Sete de Setembro",
+    "Avenida Tancredo Neves"
+  ],
+  "Feira de Santana - Bahia (BA)": [
+    "Avenida Getúlio Vargas",
+    "Avenida Presidente Dutra",
+    "Avenida Maria Quitéria"
+  ],
+  "Vitória da Conquista - Bahia (BA)": [
+    "Avenida Olívia Flores",
+    "Avenida Juracy Magalhães",
+    "Avenida Integração"
+  ],
+  "Fortaleza - Ceará (CE)": [
+    "Avenida Beira Mar",
+    "Avenida Dom Luís",
+    "Avenida Washington Soares"
+  ],
+  "Juazeiro do Norte - Ceará (CE)": [
+    "Avenida Padre Cícero",
+    "Avenida Castelo Branco",
+    "Rua São Pedro"
+  ],
+  "Sobral - Ceará (CE)": [
+    "Avenida John Sanford",
+    "Boulevard do Arco",
+    "Avenida Dom José"
+  ]
+}

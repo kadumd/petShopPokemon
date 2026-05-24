@@ -63,11 +63,8 @@ export default class PetShopPokemon {
 
         const imagemDoPokemonClicado = document.createElement('img')
         imagemDoPokemonClicado.classList.add('imagemDoPokemonClicado')
-        if (pokeapi['sprites']['versions']['generation-v']['black-white']['animated']['front_default']) {
-            imagemDoPokemonClicado.src = pokeapi['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
-        } else {
-            imagemDoPokemonClicado.src = pokeapi['sprites']['front_default']
-        }
+        console.log(pokeapi)
+        imagemDoPokemonClicado.src = pokeapi['front_default']
 
         const nomeDoPokemonClicado = document.createElement('p')
         nomeDoPokemonClicado.classList.add('nomeDoPokemonClicado')

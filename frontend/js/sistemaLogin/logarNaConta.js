@@ -11,6 +11,7 @@ export default class LogarNaConta {
     emailCriarContaInput = document.querySelector('#emailCriarConta')
     senhaCriarContaInput = document.querySelector('#senhaCriarConta')
     selectEstadosInput = document.querySelector('#selectEstadosInput')
+    selectRuasInput = document.querySelector('#selectRuasInput')
 
     botaoParaEntrarNoSite = document.querySelector('#botaoParaEntrarNoSite')
     botaoParaCriarConta = document.querySelector('#botaoParaCriarConta')
@@ -89,16 +90,20 @@ export default class LogarNaConta {
         let email = this.emailCriarContaInput.value
         let senha = this.senhaCriarContaInput.value
         let localizacao = this.selectEstadosInput.value
+        let localizacaoRua = this.selectRuasInput.value
 
         fetch('/criarConta', {
             method: "POST",
-            body: JSON.stringify({ nome, email, senha, localizacao })
+            body: JSON.stringify({ nome, email, senha, localizacao, localizacaoRua })
         }).then(r => r.json()).then(r => {
-            if (r.resposta === "Alguma lacuna esta vazia") {
+            if (r.resposta === "lacuna vazia") {
                 window.alert("Alguma das lacunas está vazia")
             }
             if (r.resposta === "O nome ja esta sendo usado") {
                 window.alert("Este nome já está sendo usado")
+            }
+            if (r.resposta === "selecione sua localizacao") {
+                window.alert("selecione sua localização")
             }
             if (r.resposta === "Voltar ao fazer login") {
                 location.assign("/")
